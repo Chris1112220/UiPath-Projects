@@ -1,0 +1,273 @@
+<Activity mc:Ignorable="sap sap2010" x:Class="Main" VisualBasic.Settings="{x:Null}" sap:VirtualizedContainerService.HintSize="873,2555.3333333333335" sap2010:WorkflowViewState.IdRef="ActivityBuilder_1" xmlns="http://schemas.microsoft.com/netfx/2009/xaml/activities" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" xmlns:sap="http://schemas.microsoft.com/netfx/2009/xaml/activities/presentation" xmlns:sap2010="http://schemas.microsoft.com/netfx/2010/xaml/activities/presentation" xmlns:scg="clr-namespace:System.Collections.Generic;assembly=System.Private.CoreLib" xmlns:uas="clr-namespace:UiPath.Activities.System;assembly=UiPath.System.Activities" xmlns:ue="clr-namespace:UiPath.Excel;assembly=UiPath.Excel.Activities" xmlns:ueab="clr-namespace:UiPath.Excel.Activities.Business;assembly=UiPath.Excel.Activities" xmlns:ui="http://schemas.uipath.com/workflow/activities" xmlns:uix="http://schemas.uipath.com/workflow/activities/uix" xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+  <TextExpression.NamespacesForImplementation>
+    <scg:List x:TypeArguments="x:String" Capacity="48">
+      <x:String>System.Activities</x:String>
+      <x:String>System.Activities.Statements</x:String>
+      <x:String>System.Activities.Expressions</x:String>
+      <x:String>System.Activities.Validation</x:String>
+      <x:String>System.Activities.XamlIntegration</x:String>
+      <x:String>Microsoft.VisualBasic</x:String>
+      <x:String>Microsoft.VisualBasic.Activities</x:String>
+      <x:String>System</x:String>
+      <x:String>System.Collections</x:String>
+      <x:String>System.Collections.Generic</x:String>
+      <x:String>System.Collections.ObjectModel</x:String>
+      <x:String>System.Data</x:String>
+      <x:String>System.Diagnostics</x:String>
+      <x:String>System.Drawing</x:String>
+      <x:String>System.IO</x:String>
+      <x:String>System.Linq</x:String>
+      <x:String>System.Security</x:String>
+      <x:String>System.Xml</x:String>
+      <x:String>System.Xml.Linq</x:String>
+      <x:String>UiPath.Activities.System.Binding</x:String>
+      <x:String>UiPath.Core</x:String>
+      <x:String>UiPath.Core.Activities</x:String>
+      <x:String>UiPath.Excel</x:String>
+      <x:String>UiPath.Word</x:String>
+      <x:String>System.Windows.Markup</x:String>
+      <x:String>UiPath.Mail</x:String>
+      <x:String>UiPath.Presentations</x:String>
+      <x:String>System.Runtime.Serialization</x:String>
+      <x:String>UiPath.UIAutomationNext.Enums</x:String>
+      <x:String>UiPath.UIAutomationCore.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Activities</x:String>
+      <x:String>UiPath.Shared.Activities</x:String>
+      <x:String>UiPath.Platform.ObjectLibrary</x:String>
+      <x:String>UiPath.UIAutomationNext.Contracts</x:String>
+      <x:String>UiPath.UIAutomationNext.Models.CV</x:String>
+      <x:String>System.ComponentModel</x:String>
+      <x:String>UiPath.Core.Activities.SAP</x:String>
+      <x:String>System.Reflection</x:String>
+      <x:String>UiPath.Activities.System</x:String>
+      <x:String>System.Linq.Expressions</x:String>
+    </scg:List>
+  </TextExpression.NamespacesForImplementation>
+  <TextExpression.ReferencesForImplementation>
+    <scg:List x:TypeArguments="AssemblyReference" Capacity="76">
+      <AssemblyReference>Microsoft.VisualBasic</AssemblyReference>
+      <AssemblyReference>mscorlib</AssemblyReference>
+      <AssemblyReference>PresentationCore</AssemblyReference>
+      <AssemblyReference>PresentationFramework</AssemblyReference>
+      <AssemblyReference>System</AssemblyReference>
+      <AssemblyReference>System.Activities</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.TypeConverter</AssemblyReference>
+      <AssemblyReference>System.Core</AssemblyReference>
+      <AssemblyReference>System.Data</AssemblyReference>
+      <AssemblyReference>System.Data.Common</AssemblyReference>
+      <AssemblyReference>System.Drawing</AssemblyReference>
+      <AssemblyReference>System.Linq</AssemblyReference>
+      <AssemblyReference>System.ObjectModel</AssemblyReference>
+      <AssemblyReference>System.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.ValueTuple</AssemblyReference>
+      <AssemblyReference>System.Xaml</AssemblyReference>
+      <AssemblyReference>System.Xml</AssemblyReference>
+      <AssemblyReference>System.Xml.Linq</AssemblyReference>
+      <AssemblyReference>UiPath.Excel</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Mail</AssemblyReference>
+      <AssemblyReference>UiPath.Mail.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.UiAutomation.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Word</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities</AssemblyReference>
+      <AssemblyReference>WindowsBase</AssemblyReference>
+      <AssemblyReference>UiPath.Studio.Constants</AssemblyReference>
+      <AssemblyReference>System.Private.ServiceModel</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Formatters</AssemblyReference>
+      <AssemblyReference>System.Private.CoreLib</AssemblyReference>
+      <AssemblyReference>System.Private.DataContractSerialization</AssemblyReference>
+      <AssemblyReference>System.Runtime.Serialization.Primitives</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationCore</AssemblyReference>
+      <AssemblyReference>UiPath.UIAutomationNext.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.OCR.Activities</AssemblyReference>
+      <AssemblyReference>UiPath.Platform</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.EventBasedAsync</AssemblyReference>
+      <AssemblyReference>Microsoft.Win32.Primitives</AssemblyReference>
+      <AssemblyReference>System.ComponentModel</AssemblyReference>
+      <AssemblyReference>System.ComponentModel.Primitives</AssemblyReference>
+      <AssemblyReference>System.Reflection.DispatchProxy</AssemblyReference>
+      <AssemblyReference>System.Reflection.TypeExtensions</AssemblyReference>
+      <AssemblyReference>System.Reflection.Metadata</AssemblyReference>
+      <AssemblyReference>UiPath.Workflow</AssemblyReference>
+      <AssemblyReference>NPOI</AssemblyReference>
+      <AssemblyReference>UiPath.Excel.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Memory.Data</AssemblyReference>
+      <AssemblyReference>UiPath.Presentations.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.Word.Activities.Design</AssemblyReference>
+      <AssemblyReference>System.Console</AssemblyReference>
+      <AssemblyReference>System.Configuration.ConfigurationManager</AssemblyReference>
+      <AssemblyReference>System.Security.Permissions</AssemblyReference>
+      <AssemblyReference>System.Memory</AssemblyReference>
+      <AssemblyReference>System.Private.Uri</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.Design</AssemblyReference>
+      <AssemblyReference>UiPath.System.Activities.ViewModels</AssemblyReference>
+      <AssemblyReference>System.Collections</AssemblyReference>
+      <AssemblyReference>System.Collections.NonGeneric</AssemblyReference>
+      <AssemblyReference>System.Linq.Expressions</AssemblyReference>
+    </scg:List>
+  </TextExpression.ReferencesForImplementation>
+  <sap:WorkflowViewStateService.ViewState>
+    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+    </scg:Dictionary>
+  </sap:WorkflowViewStateService.ViewState>
+  <ueab:SequenceX DisplayName="Single Excel Process Scope" sap:VirtualizedContainerService.HintSize="916,3382" sap2010:WorkflowViewState.IdRef="SequenceX_1">
+    <ueab:SequenceX.Variables>
+      <Variable x:TypeArguments="ue:IWorkbookQuickHandle" Default="[new WorkbookQuickHandle(workbookPath:=&quot;Project_Notebook.xlsx&quot;,visible:=True,autoSave:=False,createNew:=True,readOnly:=False,isWorkspace:=True)]" Name="Notes" />
+      <Variable x:TypeArguments="x:String" Default="nY.W!t86Www" Name="Password" />
+      <Variable x:TypeArguments="x:String" Default="nY.W!t86Www" Name="Password2" />
+      <Variable x:TypeArguments="ui:PasswordCredentials" Name="Credential_from_Get_Username_Password" />
+      <Variable x:TypeArguments="x:String" Default="[string.Format(&quot;&quot;&quot;C:\Users\car427\OneDrive - Drexel University\Desktop\Cisco AnyConnect Secure Mobility Client.lnk&quot;&quot;&quot;)]" Name="winCiscoVariable" />
+    </ueab:SequenceX.Variables>
+    <sap:WorkflowViewStateService.ViewState>
+      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+      </scg:Dictionary>
+    </sap:WorkflowViewStateService.ViewState>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Program Manager" sap:VirtualizedContainerService.HintSize="500,1534.6666666666667" sap2010:WorkflowViewState.IdRef="NApplicationCard_1" ScopeGuid="73a4b12a-3499-44e2-b583-f30bfc5429f6" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <sap:WorkflowViewStateService.ViewState>
+            <scg:Dictionary x:TypeArguments="x:String, x:Object">
+              <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+            </scg:Dictionary>
+          </sap:WorkflowViewStateService.ViewState>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="466,1209.6666666666667" sap2010:WorkflowViewState.IdRef="Sequence_1">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="452,224" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_2" Shortcuts="[d(hk)][d(lwin)]d[u(lwin)][u(hk)]" Version="V3" />
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="452,188" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_3" Shortcuts="[d(hk)][d(lwin)]r[u(lwin)][u(hk)]" Version="V3" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="Single" DisplayName="Type Into 'Type the'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="452,250.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_4" ScopeIdentifier="73a4b12a-3499-44e2-b583-f30bfc5429f6" Text="[winCiscoVariable]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CvElementArea="206, 307, 910, 66" CvType="InputBox" DesignTimeRectangle="207, 316, 846, 50" DesignTimeScaleFactor="3" ElementType="InputBox" FriendlyName="'&quot;C:\Users\car427\OneDri…'" FullSelectorArgument="&lt;wnd ctrlid='12298' /&gt;&lt;wnd ctrlid='1001' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='12298' /&gt;&lt;wnd ctrlid='1001' /&gt;" Guid="d0f4fd88-e461-483d-a917-f94c3402ea2c" InformativeScreenshot="5861a6dc3f26bcad10fa91d1ab3073d0.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='#32770' title='Run' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target DesignTimeRectangle="198, 151, 910, 132" ElementType="Text" FriendlyName="'Type the'" FullSelectorArgument="&lt;wnd ctrlid='12289' title='Type the name of a program, folder, document, or Internet resour*' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='12289' title='Type the name of a program, folder, document, or Internet resour*' check:text='Type the name of a program, folder, document, or Internet resource, and Windows will open it for' /&gt;" SearchSteps="Selector, FuzzySelector" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NKeyboardShortcuts ActivateBefore="True" ClickBeforeMode="None" DisplayName="Keyboard Shortcuts" sap:VirtualizedContainerService.HintSize="452,188" sap2010:WorkflowViewState.IdRef="NKeyboardShortcuts_4" Shortcuts="[d(hk)][k(enter)][u(hk)]" Version="V3" />
+            <ui:CommentOut DisplayName="Comment Out" sap:VirtualizedContainerService.HintSize="452,322" sap2010:WorkflowViewState.IdRef="CommentOut_1">
+              <ui:CommentOut.Body>
+                <Sequence DisplayName="Ignored Activities" sap:VirtualizedContainerService.HintSize="416,218" sap2010:WorkflowViewState.IdRef="Sequence_5">
+                  <sap:WorkflowViewStateService.ViewState>
+                    <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                      <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                    </scg:Dictionary>
+                  </sap:WorkflowViewStateService.ViewState>
+                  <uix:NClick ActivateBefore="True" ClickType="Double" DisplayName="Click 'Cisco'" sap:VirtualizedContainerService.HintSize="402,181" sap2010:WorkflowViewState.IdRef="NClick_8" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="73a4b12a-3499-44e2-b583-f30bfc5429f6" Version="V3">
+                    <uix:NClick.Target>
+                      <uix:TargetAnchorable DesignTimeRectangle="225, 563, 225, 232" DesignTimeScaleFactor="3" ElementType="ListItem" FriendlyName="'Cisco AnyConnect'" FullSelectorArgument="&lt;wnd cls='SysListView32' title='FolderView' /&gt;&lt;ctrl name='Desktop' role='list' /&gt;&lt;ctrl name='Cisco AnyConnect Secure Mobility Client' role='list item' /&gt;" FuzzySelectorArgument="&lt;wnd cls='SysListView32' title='FolderView' /&gt;&lt;ctrl name='Desktop' role='list' /&gt;&lt;ctrl role='list item' automationid='' /&gt;" Guid="d07549a2-6ffd-43c6-879d-626f73fdf0b5" InformativeScreenshot="1241ae4c24a5bd344769697abec0e637.png" ScopeSelectorArgument="&lt;wnd app='explorer.exe' cls='Progman' title='Program Manager' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                        <uix:TargetAnchorable.Anchors>
+                          <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                            <uix:Target CvTextArea="291, 705, 90, 33" CvTextArgument="Cisco" CvType="Text" DesignTimeRectangle="291, 705, 90, 33" ElementType="Text" FriendlyName="'Cisco'" SearchSteps="CV" TargetType="ComputerVisionBased" />
+                          </scg:List>
+                        </uix:TargetAnchorable.Anchors>
+                      </uix:TargetAnchorable>
+                    </uix:NClick.Target>
+                    <sap:WorkflowViewStateService.ViewState>
+                      <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                        <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+                      </scg:Dictionary>
+                    </sap:WorkflowViewStateService.ViewState>
+                  </uix:NClick>
+                </Sequence>
+              </ui:CommentOut.Body>
+            </ui:CommentOut>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="0, 0, 5760, 2160" FilePath="C:\Windows\explorer.exe" IconBase64="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" InformativeScreenshot="ec6765687f761bf75f5bb64be647dc68.png" Selector="&lt;wnd app='explorer.exe' cls='Progman' title='Program Manager' /&gt;" Title="Program Manager" />
+      </uix:NApplicationCard.TargetApp>
+      <sap:WorkflowViewStateService.ViewState>
+        <scg:Dictionary x:TypeArguments="x:String, x:Object">
+          <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+        </scg:Dictionary>
+      </sap:WorkflowViewStateService.ViewState>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Cisco AnyConnect Secure Mobility Client" sap:VirtualizedContainerService.HintSize="500,547" sap2010:WorkflowViewState.IdRef="NApplicationCard_2" InteractionMode="Simulate" ScopeGuid="b1f86051-9892-48fc-8fc5-570e95519297" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,222" sap2010:WorkflowViewState.IdRef="Sequence_2">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'unchecked'" sap:VirtualizedContainerService.HintSize="402,183" sap2010:WorkflowViewState.IdRef="NClick_2" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="b1f86051-9892-48fc-8fc5-570e95519297" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="885, 294, 302, 76" CvTextArea="975, 315, 120, 36" CvTextArgument="Connect" CvType="Button" DesignTimeRectangle="891, 300, 294, 69" DesignTimeScaleFactor="3" ElementType="Button" FriendlyName="'unchecked'" FullSelectorArgument="&lt;wnd ctrlid='1313' title='Connect' /&gt;" FuzzySelectorArgument="&lt;wnd ctrlid='1313' title='Connect' check:text='unchecked' /&gt;" Guid="0efa7712-bb46-40fc-b779-544cc65eadc1" InformativeScreenshot="e42c9cd611743d93a5f7b522007107c3.png" ScopeSelectorArgument="&lt;wnd app='vpnui.exe' cls='#32770' title='Cisco AnyConnect Secure Mobility Client' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="1227, 684, 1275, 594" FilePath="C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe" IconBase64="iVBORw0KGgoAAAANSUhEUgAAACAAAAAgCAYAAABzenr0AAAAAXNSR0IArs4c6QAAAARnQU1BAACxjwv8YQUAAAAJcEhZcwAALEoAACxKAXd6dE0AAAuDSURBVFhHtVcHVJRXFmYYGARUEKWIRmJERWwRY7ChqKCCiFI0robYkxMLksRCFFFBQTCiIEUEaTOAFBEQZEBQepveZ/5pJHuSPdk1JtmNZpdy775/ZN0ku2dTdveec8/8c6Z83/1ue8/sN5k5k2HGtDA3Y1oyR508k/fm5ozRb/zvzdzC0oI1xsbaeuLkSWMXrPIc7/eOj13gu2vHBxxca7txr++YNeFvWHouftXCfoK9OYs1xkTovzYGg8FkWbHGOk1x8Vgb7B8WFRt7Oi3nXnZlHf/uo25lbUePitNcp4yrSFK+nRkh9Yvf2Lb42Ib8adsDDtl4eXuZ2020N7NgMUf/7dcZgzWGaePk6uTptzUwIvritRul9zoau/oH+DLFtwoN9TclpRpqEzcNZbacH4qs3DC0s2TB4Db2vOfbC73/FHYzUO13YVf9nF07T9gt9p3PHDfBhg5m9K9/3hjjHCztl/i5r3v3ROTl/LIH3M6+z8QK9TOt3jBkMBpHKL0GOqRNkNkSg4cqV8G2YjcILZ4Cv7szEw5VrR6Jbzg0mPUw85vrVWXy/QnXb81eHxpoZU/U+CUkGOMmWDosXe+x+dTl2Ozqpt4+ieIppTcMGo0DIwMDRtAbdNiv6MC81kQ8WrkOt3HcMKx4Cu6tXIjnuTuR05OCzZIa6FZ0jHRKed9XtrZ9djw1p9xzQ3iwicR/MiK7OYn8NQJ+Nvd+i4AvU/5Zo6OGVVo5SDVCEKi6oVVcj0VtVyG6OhR2lMzEEM5k2F0+HxKa9mOdoAhEmj5Q6uQg08rIsxT65ZLB+x09X5xIvV3usT40iKTDdhTuX4010WWCz4HjB7LuNXb1SsTfClW84VbxAyjryoKM5tOQ8OAgnK4Jx8MVvrCrxAO2sl0whO0KB8qXQUrTSWwS1oKMkgKlp0ClU6NEIwcxcaFSOVjf0ff5keQsttObfksYdOv+1BiWLMvJyzeujM4oqOL2tj3h8quG89oSIf7BXoyq8sd9ZV64o3gmhnOmkahdcQvHGYM5jhjMnoLbOQvx/fIwTKg/h3e6yrBb1odySoky4mKNEqWUGiQqzd8qmzv1Wz6Ijbd2cJ40CvtPYzk4T/A/fPJc1v0Sfe6jK4NxdXvg/YqVsLNkFsnxVNjKcYYtHEcI5kzCzexJsJntSNwFAwvdICB/LmzKX4HhhWFwuOwEpHBzoL7/EfIUEhCqlSDRqFGl1Y0IFarv0kqrO91XB61nMJk/UIEMjfFeK7wOpsQ0XaiO+kvkXf+RnSWzIZTjSkCdSLSOEFbiCjvuvAY7SmcQQq9AMJF+U5EbbiyYA/6334A1OatxdXYQ+GVHwPb8UxBbnYsVXY+hRyYFkVqNSq0OKJ1+uLlX8EXIR3GXLX5YCwwWy2pa+JYD+3J36vaWeg/RbUWASbQmYIwo94DIal+IbdgBMfVv4YGKFbCFPQsCC+ZicOFK2FK4CdbfDsGVN7eDd8YeWJZ+DIJyEjD6bilUdvdAn0JN0qEDncEIYqX62aX88se2nt4zRuGJANassV6RgVlvFSx9ElbsNkIixq3FTkgixsPVPpj4cD8WdSeTKmdjaXcmfly7G0OL3sRNBcsw4s4OPHbvOL5bEY2b8o7h0oxIfD31FC5OvYgB2bfwXE0jcgVyFKn1SBMgLT1c/bhbN33rvoCXu8PShmW/+uzalvAiz2chHBegwXeVzYKT9UGQ03kOm8QVJJc9oNRKoV3SjMncs7C9KAAC8tbj3rL34HJjGqQ/4uCJ6kwIvJ0Ai1IvwpyrV3FhSg6E3a6B7MdC7FOQFOiNYCDzpFsk+4Nf5PnIl3VgaWs5aV2cjzSMPWswpNgFdpXPwpiGcCjpvQa9yhZU6+XkhwagB5FYLcTbrbdgX+l+WJ8biiGF78GZ2lTgdNZjQTsXoiqLwScjA2ZfyUb3JA54p9bB8ap+fCzRgoYQoAeaSK56si8u9RNzpsVLAs5+8cvVYeyZwyRyGhzL+zOQr+5CnZHCgYEB/PTTT02u0WuwnvcAT9dcJJIfQN/s9/Ctwji8eL8EC9ta8MoDLobklqJHMgfdEqpwVvJDDM/n4b0+ChVaIxIFSB1ovvkw5VYB08LC8iUB//gV6rdLFw1/XB8CZX1pKFB3kaKhSNQDNAH61eRECeQpBZDTWgp7S+Nw1c2PYEV6DITk3sCosnI4WV4HYbeqwSOpCl0vcuGVS+2wKp2P1xqVZIpqoZ+kok2o/PZI8s0iJnOUAMvW0jEg3l8eXbtziN1zFXqI7Bq9clT2HxOg36t1Gngo6oKkxhLcXnQVlqdfhsXXr+PytDzwu1EBy6/VwvRLDegc1wYucb0wN5mP7xSKIbFOBtcb5SMpdYKnQSevpJoTBqMErBzCL0W0F3akP++QN4KE4hEQOalaLZHMgMYBoykNtBvIM6XXoVCtwFpeFyZya/BtDht9Mgtw/tVinJ10D6cncHFyXBs6xfUS5+HUi3xccIWHvjf4uDFLMBKS0fGl+65Tp8jJ6kUNsGysx207eyKP2//wK7Gmf0RK8Unfisg8V9BzHfUGvUkNsopBa9CToUKR5aQmy0mJzWIR5LR1wkdVzRiS1wjeaS3gfrkdJscT8As8cLzAB6c4PrrG8+DVSzzwTOINL4rjDtj67gwzY5i/ODUxrcaMWbb3aGR1a5tRohEP0eASSghSSgwKrYKooQbKoCXgOkJKa5rtMkoDap2OfKYnLUoBV6jA7MdiOFklgKBbfJh5uZ9EzzcRcI0X4KwkISy5JoJVaf3fzzte0Mt095pHRuDo+YC0A9lSy68UlrfzZJJnSq18RKaVkBkuBjElNW01OaUiZNSElJosGJoABRqdwTRcaFfrjChS6YAroCC2RgpeKTx0jucD7bOThUQdKZy6Kx+O4nT90XP3mSxzW7sfnw2sHJwdt0ad/aS2tev3Sko9pNarQU6il1BkimloVxBXktyriNMktGTj0ekwEDeaXKYx4CORFs/WynD+NQFOuiRElwQRLr0hwcQGFTzoU36fWHRPOHVF4DaGOfNFB/zDyDpmuS7bsOFcVlFTj0j6jVavH9bqieRaitQDWacaFZFaBQK1BvkqCvgqLakBHQpUJAUqA+3YK9fDnW4V7C+TwIxUCU5MloLrFSn458qgsF01VPmw4/PwY2fSrR0cX6EhXyC/NAaDNcHJcfXuIx/erm4QiRWqZ3qDYYQuPkKG5F5nkp2OXEjA+UodIaEnM8FAnokTAu1SHdx4pISNbClMSVfipFQVuKUpyMFFPny7se+rqKTMOudFPv4MpgVrFPQnRo7Q9vO8PUM+iE0pqnuolijVz+lDqJH0P3GSbwMZywaUavR05EQJA0mHkdQI7QZyFtRiTKMKXy9QoWO2FpxvUjAnWzkcnt/79PCVnBaPNcF7mDbjJ4yi/XtjjLG1mjh3idfWqJhr+TVcpVCm+E5HNtgoCdAbB8jhgt4JtOwmYKKOgRSnAcv4Woioo+A1th6c8o0j03I1gwvSe56sPHOr5dVVQQdZ4+wnE4Sfv7AwrGys7D0WL/TfdyzuOruyr7VP8IS+C9ApoUnQVU+KjpCgK99A6sMA7Qo9XOrQwYoqPUwrGRh2K9A8n36t7bMpR1Jrxi0N2sMc+wvBXxrZFNYOTq/MXrM5Ys+ZxNLcu/Xqdp7oqVSl+auGnGzo1fqChAG6ZHrI69WORDRQQwvKqecz8oRfTjtfxrMLOfqJhfvi1WZjxpKW+zXgL43BIHdCa5uJzu7uPht2hUbF3Lpwk80va3j0eVu/4KtekfTrTqHs66ou0dPoe11fLk+t1U09mdViF3o00XK29waGrd1kMm5/3G6/0cglkcmyYLHsrewmulu7v77O9s3APbY+4cdtV22LtlkWfIS1wHcbc8qspQzb8dPMLCzHkYBfLJr/j5ERSsQhIEwTkOnVJPEvv/+ZzMzs7976jjH1z9zOAAAAAElFTkSuQmCC" InformativeScreenshot="0463740f31d11c7b7feae5c221441b93.png" Selector="&lt;wnd app='vpnui.exe' cls='#32770' title='Cisco AnyConnect Secure Mobility Client' /&gt;" Title="Cisco AnyConnect Secure Mobility Client" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+    <uix:NApplicationCard AttachMode="ByInstance" DisplayName="Use Application: Cisco AnyConnect | vpn.drexel.edu" sap:VirtualizedContainerService.HintSize="450,1277.3333333333333" sap2010:WorkflowViewState.IdRef="NApplicationCard_3" InteractionMode="Simulate" ScopeGuid="9825c708-3398-46b9-bac5-73c1b489cc4d" Version="V2">
+      <uix:NApplicationCard.Body>
+        <ActivityAction x:TypeArguments="x:Object">
+          <ActivityAction.Argument>
+            <DelegateInArgument x:TypeArguments="x:Object" Name="WSSessionData" />
+          </ActivityAction.Argument>
+          <Sequence DisplayName="Do" sap:VirtualizedContainerService.HintSize="416,961.3333333333334" sap2010:WorkflowViewState.IdRef="Sequence_3">
+            <sap:WorkflowViewStateService.ViewState>
+              <scg:Dictionary x:TypeArguments="x:String, x:Object">
+                <x:Boolean x:Key="IsExpanded">True</x:Boolean>
+              </scg:Dictionary>
+            </sap:WorkflowViewStateService.ViewState>
+            <uas:GetUsernamePasswordX OrchestratorCredentialName="{x:Null}" TimeoutInSeconds="{x:Null}" AutosubmitTimeoutSeconds="3" Credential="[Credential_from_Get_Username_Password]" CredentialName="UiPath: VPN" CredentialsSource="CredentialsManager" DisplayName="Get Username/Password" sap:VirtualizedContainerService.HintSize="374,210" sap2010:WorkflowViewState.IdRef="GetUsernamePasswordX_4" />
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'car427'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="374,250.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_2" ScopeIdentifier="9825c708-3398-46b9-bac5-73c1b489cc4d" Text="[Credential_from_Get_Username_Password.Username]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable CvTextArea="399, 330, 102, 36" CvTextArgument="car427" CvType="Text" DesignTimeRectangle="396, 328, 577, 47" DesignTimeScaleFactor="3" ElementType="InputBox" FriendlyName="'car427'" FullSelectorArgument="&lt;wnd cls='Edit' /&gt;&lt;ctrl name='Username:' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;&lt;ctrl name='Username:' role='editable text' automationid='' /&gt;" Guid="eee34f9f-8e78-46a0-907e-267dd79906c6" InformativeScreenshot="7971034437481cdf5ad8c5e4c8c4df39.png" ScopeSelectorArgument="&lt;wnd app='vpnui.exe' cls='#32770' title='Cisco AnyConnect | vpn.drexel.edu' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvElementArea="934, 236, 50, 51" CvTextArea="396, 243, 147, 36" CvTextArgument="DrexelVPN" CvType="ArrowButton" DesignTimeRectangle="390, 234, 589, 62" ElementType="DropDown" FriendlyName="'DrexelVPN'" FullSelectorArgument="&lt;wnd aaname='Group:' cls='ComboBox' /&gt;&lt;ctrl name='Group:' role='combo box' /&gt;" FuzzySelectorArgument="&lt;wnd aaname='Group:' cls='ComboBox' /&gt;&lt;ctrl name='Group:' role='combo box' automationid='' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NTypeInto ActivateBefore="True" ClickBeforeMode="None" DisplayName="Type Into 'Password'" EmptyFieldMode="SingleLine" sap:VirtualizedContainerService.HintSize="374,250.66666666666666" sap2010:WorkflowViewState.IdRef="NTypeInto_3" ScopeIdentifier="9825c708-3398-46b9-bac5-73c1b489cc4d" Text="[Credential_from_Get_Username_Password.Password]" Version="V3">
+              <uix:NTypeInto.Target>
+                <uix:TargetAnchorable DesignTimeRectangle="396, 413, 577, 47" DesignTimeScaleFactor="3" ElementType="InputBoxPassword" FriendlyName="'Password'" FullSelectorArgument="&lt;wnd cls='Edit' idx='2' /&gt;&lt;ctrl name='Password:' role='editable text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Edit' /&gt;&lt;ctrl name='Password:' role='editable text' automationid='' /&gt;" Guid="36498751-95ca-4950-b7b0-e373562bc319" InformativeScreenshot="330cc36b51a9a4d84b1cee26c798e513.png" ScopeSelectorArgument="&lt;wnd app='vpnui.exe' cls='#32770' title='Cisco AnyConnect | vpn.drexel.edu' /&gt;" SearchSteps="FuzzySelector" Version="V2" Visibility="Interactive">
+                  <uix:TargetAnchorable.Anchors>
+                    <scg:List x:TypeArguments="uix:ITarget" Capacity="1">
+                      <uix:Target CvTextArea="201, 414, 150, 36" CvTextArgument="Password:" CvType="Text" DesignTimeRectangle="211, 413, 156, 59" ElementType="Text" FriendlyName="'Password'" FullSelectorArgument="&lt;wnd cls='Static' title='Password:' /&gt;&lt;ctrl name='Password:' role='text' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Static' title='Password:' /&gt;&lt;ctrl name='Password:' role='text' automationid='' check:text='Password:' /&gt;" SearchSteps="Selector, FuzzySelector, CV" />
+                    </scg:List>
+                  </uix:TargetAnchorable.Anchors>
+                </uix:TargetAnchorable>
+              </uix:NTypeInto.Target>
+            </uix:NTypeInto>
+            <uix:NClick ActivateBefore="True" ClickType="Single" DisplayName="Click 'OK'" sap:VirtualizedContainerService.HintSize="374,183" sap2010:WorkflowViewState.IdRef="NClick_3" KeyModifiers="None" MouseButton="Left" ScopeIdentifier="9825c708-3398-46b9-bac5-73c1b489cc4d" Version="V3">
+              <uix:NClick.Target>
+                <uix:TargetAnchorable CvElementArea="508, 561, 230, 81" CvTextArea="600, 585, 48, 36" CvTextArgument="OK" CvType="Button" DesignTimeRectangle="513, 567, 225, 75" DesignTimeScaleFactor="3" ElementType="Button" FriendlyName="'OK'" FullSelectorArgument="&lt;wnd cls='Button' title='OK' /&gt;" FuzzySelectorArgument="&lt;wnd cls='Button' title='OK' check:text='OK' /&gt;" Guid="14fdb2ba-a4a9-476f-aa88-a55638659eb9" InformativeScreenshot="d2551c04545167d8b9f8e8f4925a26f4.png" ScopeSelectorArgument="&lt;wnd app='vpnui.exe' cls='#32770' title='Cisco AnyConnect | vpn.drexel.edu' /&gt;" SearchSteps="Selector, FuzzySelector, CV" Version="V2" Visibility="Interactive" />
+              </uix:NClick.Target>
+            </uix:NClick>
+          </Sequence>
+        </ActivityAction>
+      </uix:NApplicationCard.Body>
+      <uix:NApplicationCard.TargetApp>
+        <uix:TargetApp Area="273, 555, 1071, 693" FilePath="C:\Program Files (x86)\Cisco\Cisco AnyConnect Secure Mobility Client\vpnui.exe" IconBase64="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" InformativeScreenshot="027c04b51a10ec97ddb2e5ccc9497efc.png" Selector="&lt;wnd app='vpnui.exe' cls='#32770' title='Cisco AnyConnect | vpn.drexel.edu' /&gt;" Title="Cisco AnyConnect | vpn.drexel.edu" />
+      </uix:NApplicationCard.TargetApp>
+    </uix:NApplicationCard>
+  </ueab:SequenceX>
+</Activity>
